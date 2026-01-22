@@ -30,6 +30,9 @@ app.post("/echo", async (c) => {
   return c.json(body);
 });
 
+app.get("/", async (c) => {
+  return c.json({ "message": "Healthy" })
+})
 const port = 3000;
 console.log(`Server is running on port ${port}`);
 
